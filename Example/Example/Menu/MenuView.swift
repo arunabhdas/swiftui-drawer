@@ -37,6 +37,10 @@ struct MenuView: View {
       Button(
         action: {
           /* noop */
+            if let sel = selection {
+                print("TODO-FIXME-DEBUG-PRINT The selection is \(sel)")
+            }
+          
         },
         label: {
           Label.logout
@@ -78,6 +82,7 @@ struct MenuView_Previews: PreviewProvider {
           .onTapGesture {
             withAnimation(.spring()) {
               appearance.toggle()
+              print("TODO-FIXME-DEBUG-PRINT The selection is \($menuItem)")
             }
           }
       }

@@ -12,5 +12,5 @@ struct User {
 
 extension User {
 
-  static let stub = User(name: "Alexey Podolyan", position: "CTO", imageName: "placeholder/user", isOnline: true)
+  static let stub = User(name: "AI Assistant", position: "Your AI Companion", imageName: "placeholder/user", isOnline: true)
 }
