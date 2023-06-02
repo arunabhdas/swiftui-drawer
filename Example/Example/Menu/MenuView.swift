@@ -38,7 +38,7 @@ struct MenuView: View {
         action: {
           /* noop */
             if let sel = selection {
-                print("TODO-FIXME-DEBUG-PRINT The selection is \(sel)")
+                print("TODO-FIXME-CLEANUP The selection is \(sel)")
             }
           
         },
@@ -82,7 +82,7 @@ struct MenuView_Previews: PreviewProvider {
           .onTapGesture {
             withAnimation(.spring()) {
               appearance.toggle()
-              print("TODO-FIXME-DEBUG-PRINT The selection is \($menuItem)")
+              print("TODO-FIXME-CLEANUP The selection is \($menuItem)")
             }
           }
       }
