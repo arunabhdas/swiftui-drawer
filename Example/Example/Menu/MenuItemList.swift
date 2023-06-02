@@ -48,6 +48,7 @@ struct MenuItemList: View {
             if selection == item {
               selection = nil
             } else {
+              print("TODO-FIXME-DEBUG-PRINT Selection is \(item)")
               selection = item
             }
           },
