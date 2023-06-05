@@ -19,22 +19,64 @@ struct ContentView: View {
       },
       content: {
         ZStack {
-          Color("color/background")
+            Color("color/foreground")
             .environment(\.colorScheme, colorScheme.inverted())
             .edgesIgnoringSafeArea(.all)
             .animation(.default, value: colorScheme)
 
-          Button {
+            /* TODO-FIXME-DEBUG
+            Button {
             isOpened.toggle()
-          } label: {
+            } label: {
             Text("Open")
               .foregroundColor(Color("color/text"))
               .typographyStyle(.headline)
-          }
+            }
+            */
+            
+            switch selection {
+            case .workloadSheet:
+                DashboardView()
+            case .dashboard:
+                DashboardView()
+            case .projects:
+                ProfileView()
+            case .departments:
+                SettingsView()
+            case .employees:
+                SettingsView()
+            case .notifications:
+                SettingsView()
+            case .performanceReview:
+                SettingsView()
+            case .archive:
+                SettingsView()
+            case .none:
+                EmptyView()
+            }
+            
+
+            // Menu button
+            VStack {
+              HStack {
+                Button(action: {
+                  isOpened.toggle()
+                }) {
+                  Image(systemName: "line.horizontal.3")
+                    .imageScale(.large)
+                    .padding()
+                    .foregroundColor(Color("color/text"))
+                }
+                Spacer()
+              }
+              Spacer()
+            }
+
         }
       }
     )
     .statusBarHidden(true)
+
   }
 }
 
