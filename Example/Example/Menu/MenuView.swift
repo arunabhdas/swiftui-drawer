@@ -4,7 +4,7 @@ import SwiftUI
 struct MenuView: View {
     
     @Binding private var selection: MenuItem?
-    
+    @Binding private var isOpened: Bool
     
     @SceneStorage("menuAppearance")
     private var appearance: MenuAppearance = .default
@@ -14,19 +14,20 @@ struct MenuView: View {
     
     // MARK: - Init
     
-    init(selection: Binding<MenuItem?>) {
+    init(selection: Binding<MenuItem?>, isOpened: Binding<Bool>) {
         _selection = selection
+        _isOpened = isOpened
     }
     
     // MARK: - Body
     
     var body: some View {
         VStack {
-            MenuItemList(selection: $selection) {
+            MenuItemList(selection: $selection, isOpened: $isOpened, onUserSelected: {
                 withAnimation {
                     appearance.toggle()
                 }
-            }
+            })
             
             Spacer()
                 .frame(height: 10)
@@ -75,10 +76,11 @@ struct MenuView_Previews: PreviewProvider {
         
         @State var appearance: MenuAppearance = .default
         @State var menuItem: MenuItem? = .dashboard
+        @State var isOpened: Bool = true
         
         var body: some View {
             ZStack(alignment: .leading) {
-                MenuView(selection: $menuItem)
+                MenuView(selection: $menuItem, isOpened: $isOpened)
                     .menuAppearance(appearance)
                     .onTapGesture {
                         withAnimation(.spring()) {

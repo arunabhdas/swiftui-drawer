@@ -15,7 +15,7 @@ struct ContentView: View {
     Drawer(
       isOpened: $isOpened,
       menu: {
-        MenuView(selection: $selection)
+        MenuView(selection: $selection, isOpened: $isOpened)
       },
       content: {
         ZStack {
