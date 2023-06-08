@@ -1,14 +1,14 @@
 
 enum MenuItem: Identifiable, CaseIterable {
 
-  case workloadSheet
+  case home
   case dashboard
-  case projects
-  case departments
-  case employees
-  case notifications
-  case performanceReview
+  case artAI
+  case musicAI
+  case companionAI
+  case healthAI
   case archive
+  case notifications
 
   var id: Int { hashValue }
 }

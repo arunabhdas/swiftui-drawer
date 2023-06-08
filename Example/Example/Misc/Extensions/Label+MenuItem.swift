@@ -5,29 +5,31 @@ extension Label where Title == Text, Icon == Image {
 
   init(item: MenuItem) {
     switch item {
-    case .workloadSheet:
-      self.init("Workload Sheet", image: "icon/home")
+    case .home:
+      self.init("Home", image: "icon/home")
 
     case .dashboard:
-      self.init("Dashboard", image: "icon/dashboard")
+      self.init("AI Concierge", image: "icon/dashboard")
 
-    case .projects:
-      self.init("Projects", image: "icon/projects")
+    case .artAI:
+      self.init("AI Art", image: "icon/projects")
 
-    case .departments:
-      self.init("Departments", image: "icon/departments")
+    case .musicAI:
+      self.init("AI Music", image: "icon/departments")
+        
+    case .healthAI:
+      self.init("AI Health", image: "icon/performanceReview")
+        
+    case .archive:
+      self.init("AI Fitness", image: "icon/archive")
 
-    case .employees:
-      self.init("Employees", image: "icon/employees")
+    case .companionAI:
+      self.init("AI Companion", image: "icon/employees")
 
     case .notifications:
       self.init("Notifications", image: "icon/notifications")
 
-    case .performanceReview:
-      self.init("Performance Review", image: "icon/performanceReview")
 
-    case .archive:
-      self.init("Archive", image: "icon/archive")
     }
   }
 }

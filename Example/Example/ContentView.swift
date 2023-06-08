@@ -35,20 +35,20 @@ struct ContentView: View {
             */
             
             switch selection {
-            case .workloadSheet:
-                DashboardView()
+            case .home:
+                HomeView()
             case .dashboard:
                 DashboardView()
-            case .projects:
-                ProfileView()
-            case .departments:
-                SettingsView()
-            case .employees:
+            case .artAI:
+                ArtView()
+            case .musicAI:
+                MusicView()
+            case .companionAI:
                 SettingsView()
             case .notifications:
                 SettingsView()
-            case .performanceReview:
-                SettingsView()
+            case .healthAI:
+                HealthView()
             case .archive:
                 SettingsView()
             case .none:

@@ -10,6 +10,10 @@
 		DCF7079A2A2E435E0072DD0E /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF707992A2E435E0072DD0E /* DashboardView.swift */; };
 		DCF7079C2A2E45670072DD0E /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF7079B2A2E45670072DD0E /* ProfileView.swift */; };
 		DCF7079E2A2E45850072DD0E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF7079D2A2E45850072DD0E /* SettingsView.swift */; };
+		DCF707A02A2FDE9F0072DD0E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF7079F2A2FDE9F0072DD0E /* HomeView.swift */; };
+		DCF707A22A2FE0260072DD0E /* ArtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF707A12A2FE0260072DD0E /* ArtView.swift */; };
+		DCF707A42A2FE0A70072DD0E /* MusicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF707A32A2FE0A70072DD0E /* MusicView.swift */; };
+		DCF707A62A2FE3A90072DD0E /* HealthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF707A52A2FE3A90072DD0E /* HealthView.swift */; };
 		E8256A2329776AA90070E510 /* MenuItemGeometryPreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8256A2229776AA90070E510 /* MenuItemGeometryPreferenceKey.swift */; };
 		E8256A26297848F50070E510 /* MenuBackgroundTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8256A25297848F50070E510 /* MenuBackgroundTransition.swift */; };
 		E832B1F129533B74002E3462 /* ExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E832B1F029533B74002E3462 /* ExampleApp.swift */; };
@@ -49,6 +53,10 @@
 		DCF707992A2E435E0072DD0E /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		DCF7079B2A2E45670072DD0E /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		DCF7079D2A2E45850072DD0E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		DCF7079F2A2FDE9F0072DD0E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		DCF707A12A2FE0260072DD0E /* ArtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtView.swift; sourceTree = "<group>"; };
+		DCF707A32A2FE0A70072DD0E /* MusicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicView.swift; sourceTree = "<group>"; };
+		DCF707A52A2FE3A90072DD0E /* HealthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthView.swift; sourceTree = "<group>"; };
 		E8256A2229776AA90070E510 /* MenuItemGeometryPreferenceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemGeometryPreferenceKey.swift; sourceTree = "<group>"; };
 		E8256A25297848F50070E510 /* MenuBackgroundTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBackgroundTransition.swift; sourceTree = "<group>"; };
 		E832B1ED29533B74002E3462 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,6 +112,10 @@
 				DCF707992A2E435E0072DD0E /* DashboardView.swift */,
 				DCF7079B2A2E45670072DD0E /* ProfileView.swift */,
 				DCF7079D2A2E45850072DD0E /* SettingsView.swift */,
+				DCF7079F2A2FDE9F0072DD0E /* HomeView.swift */,
+				DCF707A12A2FE0260072DD0E /* ArtView.swift */,
+				DCF707A32A2FE0A70072DD0E /* MusicView.swift */,
+				DCF707A52A2FE3A90072DD0E /* HealthView.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -374,8 +386,10 @@
 				E8E57C4429762B3B006B3A6C /* MenuView.swift in Sources */,
 				E8FEEAB429704F90001FF8AF /* UserImage.swift in Sources */,
 				E8E214DC297053D400DF7962 /* MenuLabelStyle.swift in Sources */,
+				DCF707A02A2FDE9F0072DD0E /* HomeView.swift in Sources */,
 				E8FEEABA29704FF4001FF8AF /* Label+Default.swift in Sources */,
 				E8FEEAAD29704F90001FF8AF /* ColorSchemePicker.swift in Sources */,
+				DCF707A42A2FE0A70072DD0E /* MusicView.swift in Sources */,
 				E832B1F329533B74002E3462 /* ContentView.swift in Sources */,
 				E8FEEAAF29704F90001FF8AF /* MenuAppearance.swift in Sources */,
 				E8256A2329776AA90070E510 /* MenuItemGeometryPreferenceKey.swift in Sources */,
@@ -394,7 +408,9 @@
 				E8FEEAAC29704F90001FF8AF /* Label+ColorScheme.swift in Sources */,
 				E8E57C4229762591006B3A6C /* MenuButtonStyle.swift in Sources */,
 				E8FEEA9629704F78001FF8AF /* View+OverrideColorScheme.swift in Sources */,
+				DCF707A22A2FE0260072DD0E /* ArtView.swift in Sources */,
 				E8FEEA9A29704F78001FF8AF /* AnchorPreferenceKey.swift in Sources */,
+				DCF707A62A2FE3A90072DD0E /* HealthView.swift in Sources */,
 				DCF7079A2A2E435E0072DD0E /* DashboardView.swift in Sources */,
 				E8FEEAAE29704F90001FF8AF /* UserHeader.swift in Sources */,
 				E8256A26297848F50070E510 /* MenuBackgroundTransition.swift in Sources */,
@@ -532,7 +548,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Example/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Unicorn;
+				INFOPLIST_KEY_CFBundleDisplayName = ConciergeAI;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -564,7 +580,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Example/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Unicorn;
+				INFOPLIST_KEY_CFBundleDisplayName = ConciergeAI;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -21,7 +21,8 @@ extension ColorScheme: CustomStringConvertible {
       return "Dark"
 
     @unknown default:
-      return "Unknown"
+      // TODO-FIXME-CLEANUP return "Unknown"
+      return "Dark"
     }
   }
 
